@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.simpleWeather.js"></script>
+	<!--<script type="text/javascript" language="javascript" src="js/clima.js"></script>-->
+	<link rel="stylesheet" href="css/clima2.css">
+</head>
+<body>
+	<h1>asdadad</h1>
+	<script type="text/javascript">
+	
+		$.simpleWeather({
+    		zipcode: '',
+    		woeid: '',
+    		location: 'delicias, chihuahua',
+    		unit: 'c',
+    		success: function(weather) {
+
+    			condiciones = new Array(
+        			'Tornado',
+					'Tormenta Tropical',
+					'Huracán',
+					'Tormentas Fuertes',
+					'Tormentas',
+					'Lluvia y Nieve Mezclada',
+					'Lluvia y Aguanieve Mezclada',
+					'Aguanieve',
+					'Llovizna Helada',
+					'Llovizna',
+					'Lluvia Helada',
+					'Chaparrones',
+					'Chaparrones',
+					'Nieve Ligera',
+					'Nieve Ligera',
+					'Ventisca de Nieve',
+					'Nieve',
+					'Granizo',
+					'Aguanieve',
+					'Polvo',
+					'Niebla',
+					'Bruma',
+					'Humo',
+					'Tempestad',
+					'Ventoso',
+					'Frío',
+					'Nublado',
+					'Medio Nublado',
+					'Medio Nublado',
+					'Parcialmente Nublado',
+					'Parcialmente Nublado',
+					'Despejado',
+					'Soleado',
+					'Algo Nublado',
+					'Algo Nublado',
+					'Lluvia con Granizo',
+					'Caluroso',
+					'Tormentas Aisladas',
+					'Tormentas Dispersas',
+					'Tormentas Dispersas',
+					'Chubascos Dispersos',
+					'Nieve Pesada',
+					'Nevadas Débiles y Dispersas',
+					'Nevada Intensa',
+					'Nubes Dispersas',
+					'Tormentas',
+					'Nevadas Dispersas',
+					'Tormentas Aisladas'
+					);
+
+        		html = '<h2>'+weather.city+', '+weather.region+'</h2>';
+        		html += '<img style="float:left;"  src="clima/icons/'+weather.code+'.png">';
+        		
+        		/*html += '<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>';*/
+
+        		html += '<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+condiciones[weather.code]+'</span></p>';
+
+
+
+
+        		
+        		
+        		
+        		$("#weather").html(html);
+    		},
+    error: function(error) {
+        $("#weather").html('<p>'+error+'</p>');
+    }
+});
+</script>
+<div id="weather"></div>
+</body>
+</html>

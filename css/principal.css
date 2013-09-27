@@ -1,0 +1,192 @@
+/***********RESET****************/
+
+/* Fin Reset Estilos CSS */
+/* ***********************************************/
+*{
+	border:0;
+	margin: 0;
+	padding: 0;
+
+}
+/*************************************************/
+@font-face {
+	font-family: 'Listicons';
+	src: 
+	      url('fonts/Listicons/Listicons.svg') format('svg');
+	}
+
+/**********************************************/
+body{
+	font-family: arial;
+	font-size: 1em;
+	/*background: #212121 url("../img/azulg.png");*/
+	background: #8A99A7;
+	color:white;
+}
+
+header,footer{
+	/*border-radius: 1rem 1rem 0 0;*/
+	/*margin-top: 1em;*/
+	/*background-color: #2E73B3;*/
+	background-color: #ffffff;
+	/*height: 100px;*/
+}
+footer{
+	/*outline: solid 1px black;*/
+	margin-top:0;
+	border-radius: 0;
+}
+
+nav{
+	outline:green solid 1px;
+	vertical-align: middle;
+	display:inline-block;
+	background-color: #3D3D3E;
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+	/*padding: 0.1%;*/
+}
+nav ul li a{
+	/*outline: solid 1px red;*/
+	color:#3D71BF;
+	text-decoration: none;
+	padding: 8px 20px 6px;
+	font-weight: bold;
+	display: block;
+}
+/*****/
+/*a.active:after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #CCCCCC;
+    content: "";
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+
+
+}
+/********/
+/*.activo{
+	background-color: #cccccc;
+	color:black;
+}*/
+div#Fecha_Reloj{
+	display: inline-block;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: .5rem;
+	color:#3D3D3E;
+}
+.carrusel{
+	margin:1em auto;
+	/*background-color: red;*/
+	/*width: 90%;
+	height: 150px;*/
+	
+}
+.contenedor{
+	background-color: #DBEAF9;
+}
+.contenedores{
+	outline: solid 1px red;
+	color:blue;
+	/*background-color: yellow;*/
+	display: inline-block;
+	margin: 0 2px 0 2px;
+	width: 237px;
+}
+.contenedores-izq{
+	background-color: white;
+	height: 50px;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+	margin-right: 2px;
+	width: 237px;
+	display: inline-block;
+}
+.contenedores-der{
+	background-color: white;
+	height: 50px;
+	margin-left: 2px;
+	width: 237px;
+	display: inline-block;
+}
+
+
+.galeria{
+	margin: 1em auto;
+	/*width: 80%;*/
+	/*background-color: red;*/
+	/*height:500px;*/
+	
+}
+
+.logo-header{
+	display: inline-block;
+	outline:red 1px solid;
+	padding: .5em;
+}
+.wrapper{
+	/*border-radius: 2rem 2rem 0 0;*/
+	margin:1em auto;
+	max-width: 960px;
+	/*width: 960px;*/
+	outline: solid 1px orange;
+	background-color: #DBEAF9;
+}
+.icono-clima{
+	vertical-align: middle;
+	height: 25px;
+	display:inline-block;
+	margin-left: .5rem;
+	/*outline: red 1px solid;*/
+}
+.clima{
+	vertical-align: middle;
+	/*outline: green 1px solid;*/
+	display: inline-block;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: .5rem;
+	color:#3D3D3E;
+}
+/***********/
+/***********Pie*******************/
+.menu-footer{
+	width:100%;
+}
+.colf{
+	display:inline-block;
+	/*outline: 1px red solid;*/
+	/*background-color: #33373A;*/
+	width: 25%;
+}
+.colf-lista{
+	
+	text-align: left;
+}
+.menu-pie{
+	
+	list-style: none;
+	/*list-style-image: url("../img/vineta4.png");*/
+	
+}
+.elementos-pie a{
+	font-family: arial;
+	font-size: .9em;
+	/*font-weight: bold;*/
+	color: white;
+}
+.pie{
+	font-size: 16px;
+	text-align: center;
+}

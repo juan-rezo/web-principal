@@ -1,0 +1,137 @@
+body{
+	/*background: url("../img/azulg.png");*/
+	background-color: #8E8E8E;
+	font-family: arial;
+	font-size: 1em;
+	/*background-color:#222;*/
+	color:#eee;
+	text-align: center;
+}
+figure{
+
+}
+figure, nav{
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;
+	/*outline: 1px solid yellow;*/
+}
+header,footer{
+	/*outline: 1px solid green;*/
+	/*background-color: #2E73B3;*/
+	background-color: #ffffff;
+}
+nav{
+	/*outline:1px solid black;*/
+	margin-left: 5em;
+
+}
+nav ul{
+	list-style:none;
+	display: inline-block;
+}
+nav li {
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: top;
+}
+nav a{
+	/*border: 0.1em solid #57abb8;*/
+	/*border-radius: 0.25em;*/
+	/*color:#eee;*/
+	color:#1C1C1C;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	/*font-size: 1.4em;*/
+	font-size: 1em;
+	padding: 0.2em;
+	/*-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;*/
+   transition:all 0.5s ease-in;
+	/*-moz-transition: all 0.5s ease-in;*/
+}
+nav a:hover{
+	background: #DBEAF9;
+	/*border:0.1em dashed #f60;*/
+	border-radius: 0 0.5em 0 0.5em;
+	color:#133049;
+	transition:all 0.5s ease-out;
+}
+img,video{
+	max-width: 100%;
+}
+
+div#Fecha_Reloj{
+	display: inline-block;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: .5rem;
+	color:#3D3D3E;
+}
+
+.wrapper{
+	background-color: #DBEAF9;
+	margin:0 auto;
+	padding:2em 0;
+	outline: solid 1px red;
+	width: 90%;
+}
+.contenedor{
+	background-color: green;
+}
+.galeria{
+	background-color: black;
+
+}
+.content{
+	background-color: red;
+}
+/***********Pie*******************/
+.menu-footer{
+	width:100%;
+}
+.colf{
+	display:inline-block;
+	outline: 1px red solid;
+	/*background-color: #33373A;*/
+	width: 25%;
+}
+.colf-lista{
+	
+	text-align: left;
+}
+.menu-pie{
+	
+	list-style: none;
+	list-style-image: url("../img/vineta4.png");
+	
+}
+.elementos-pie a{
+	font-family: arial;
+	font-size: .9em;
+	/*font-weight: bold;*/
+	color: white;
+}
+.pie{
+	font-size: 16px;
+}
+.icono-clima{
+	vertical-align: middle;
+	height: 25px;
+	display:inline-block;
+	margin-left: .5rem;
+	/*outline: red 1px solid;*/
+}
+.clima{
+	vertical-align: middle;
+	/*outline: green 1px solid;*/
+	display: inline-block;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: .5rem;
+	color:#3D3D3E;
+}

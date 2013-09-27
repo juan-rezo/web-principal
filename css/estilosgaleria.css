@@ -1,0 +1,165 @@
+
+div#feature_list {
+            /*width: 750px;original*/
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+        /*posicionamiento pestana negro*/
+        div#feature_list ul {
+            position: absolute;
+            top: 0;
+            list-style: none;   
+            padding: 0;
+            margin: 0;
+        }
+        /*Tamano de las pestanas*/
+        ul#pestanas {
+            left: 0;
+            z-index: 2;
+            width: 320px;
+        }
+
+        ul#pestanas li {
+            font-size: 12px;
+            font-family: Arial;
+        }
+        
+        ul#pestanas li img {
+            padding: 5px;
+            border: none;
+            float: left;
+            
+            margin: 10px 10px 0 0;
+        }
+
+        ul#pestanas li a {
+            color: #222;
+            text-decoration: none;  
+            display: block;
+            padding: 10px 48px 10px 1px;
+            height: 60px;
+            outline: none;
+            margin:0 2px 0 0;
+        }
+
+        ul#pestanas li a:hover {
+            text-decoration: underline;
+        }
+
+        ul#pestanas li a.current {
+            background:  url('../img/galeria/feature-tab-current.png');
+            color: #FFF;
+        }
+
+        ul#pestanas li a.current:hover {
+            text-decoration: none;
+            cursor: default;
+        }
+
+        ul#ver_articulo {
+            right: 0;
+            width: 463px;
+            height: 240px;
+            position: relative;
+        }
+
+        ul#ver_articulo li {
+            position: absolute;
+            width: 463px;
+            height: 240px;
+        }
+
+        ul#ver_articulo li a {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-size: 11px;
+            color: #000;
+            background: #FFF;
+            -moz-border-radius: 5px;
+        }
+        
+        ul#ver_articulo li a:hover {
+            
+            background: #FF9F00;
+        }
+    a {
+    font-size: 12px;
+    outline-color: #888;
+    font-family:Tahoma;
+    text-decoration:none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+h3{
+    font-size: 1em;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/**********************************************************/
+/*body {
+    background: none repeat scroll 0 0 #EEEEEE;
+    font-family: "Trebuchet MS",Verdana,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}*/
+#content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    /*margin: 50px auto;*/
+    margin:10px auto;
+	padding: 20px;
+    /*width: 750px; original*/
+    width: 62%;
+}
+h1 {
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 24px;
+    margin: 0;
+}
+hr {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: medium none;
+    height: 1px;
+    line-height: 1px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+p {
+    font-family: Tahoma;
+    font-size: 12px;
+    margin: 0;
+    padding: 7px 0;
+}
+.clear {
+    clear: both;
+    font-size: 1px;
+    line-height: 1px;
+}
+a {
+    font-family: Tahoma;
+    font-size: 9px;
+    outline-color: #888888;
+    text-decoration: none;
+}
+descripcion {
+    font-family: Tahoma;
+    font-size: 11px;
+}*/
