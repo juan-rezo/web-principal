@@ -82,6 +82,7 @@ nav a:hover{
 	width: 90%;
 	margin: 0 auto;
 }
+
 div#Fecha_Reloj{
 	display: inline-block;
 	font-size: 12px;
@@ -112,26 +113,32 @@ div#Fecha_Reloj{
 	/*outline: 1px red solid;*/
 	max-width: 960px;
 }
-.artizq, .artder, .artmed{
+/******************************/
+.articulo{
 	vertical-align: top;
 	outline: green solid 1px;
 	max-width: 100%;
 	/*width: 48%;*/
 	width: 32%;
+	/*height: 200px;*/
 	margin:0 0.2em;
 	display: inline-block;
 	font-size:12px;
 	color:blue;
 
 }
-.linkizq img, .linkder img, .artmed img{
-	width: 100%;
 
+.tit-art h2{
+	font-size: 13px;
+	font-weight: bold;
+	color:#474747;
 }
-.astizq p, .artder p, .artder{
-	text-align: left;
+.parrafo-art{
+	text-align: justify;
+	color:#545a6d;
+	font-size: 11px;
+}
 
-}
 .icono-clima{
 	vertical-align: middle;
 	height: 25px;
@@ -184,4 +191,11 @@ div#Fecha_Reloj{
 }
 .linkder{
 	width: 25%;
+}
+.tit-contenedores{
+	color:#001D3A;
+}
+.tit-contenedores img, .tit-contenedores h2{
+	display:inline-block;
+	vertical-align: middle;
 }
