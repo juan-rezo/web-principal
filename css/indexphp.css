@@ -9,10 +9,12 @@ body{
 	margin:0 auto;
 	max-width: 100%;
 	/*width: 65%;*/
-	width: 72%;
+	/*width: 72%;*/
+	width: 77%;
 	outline: 2px blue solid;
-	padding: 0.25em;
+	/*padding: 0.25em;*/
 	vertical-align: top;
+	overflow: hidden;
 	/*height: 50px;*/
 }
 
@@ -20,7 +22,7 @@ aside{
 	
 	/*width: 30%;*/
 	width: 22%;
-	margin: 0 0.5em;
+	/*margin: 0 0.5em;*/
 	
 }
 header,footer,#contenido{
@@ -82,7 +84,11 @@ nav a:hover{
 	width: 90%;
 	margin: 0 auto;
 }
-
+#contenedor-art{
+	width: 32%;
+	/*outline: solid red 1px;*/
+	display:inline-block;
+}
 div#Fecha_Reloj{
 	display: inline-block;
 	font-size: 12px;
@@ -104,6 +110,22 @@ div#Fecha_Reloj{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002347', endColorstr='#022f6b',GradientType=0 ); /* IE6-9 */
 
 }
+#footerline1{
+	margin-top:1em;
+}
+#pie-pagina{
+	margin-bottom: 1.5em;
+	text-align: center;
+	margin: 0 auto;
+	color:#004CA1;
+}
+#pie-pagina h5{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color:#004CA1;
+	font-size: .5em;
+}
 #wrapper{
 	margin: 0 auto;
 	/*background-color: #EEEEEE;*/
@@ -115,17 +137,31 @@ div#Fecha_Reloj{
 }
 /******************************/
 .articulo{
+	background-color: #F4F4F4;
 	vertical-align: top;
-	outline: green solid 1px;
+	/*outline: green solid 1px;*/
 	max-width: 100%;
 	/*width: 48%;*/
-	width: 32%;
+	/*width: 32%;*/
 	/*height: 200px;*/
 	margin:0 0.2em;
 	display: inline-block;
 	font-size:12px;
 	color:blue;
 
+
+}
+
+.btn-articulo{
+
+	background-color: #f4f4f4;
+	margin-top:.5em;
+	transition:all 1s ease;
+
+}
+.btn-articulo a{
+	display: block;
+	padding: .5em;
 }
 
 .tit-art h2{
@@ -134,6 +170,7 @@ div#Fecha_Reloj{
 	color:#474747;
 }
 .parrafo-art{
+	padding: 1em;
 	text-align: justify;
 	color:#545a6d;
 	font-size: 11px;
@@ -156,7 +193,10 @@ div#Fecha_Reloj{
 	margin-left: .5rem;
 	color:#3D3D3E;
 }
-
+.imagen-art img{
+	/*width: 100%;*/
+	padding-top: 1em;
+}
 .linkizq, .linkder{
 	width: 18%;
 	display: inline-block;

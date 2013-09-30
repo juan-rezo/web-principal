@@ -7,9 +7,10 @@
 	<link rel="stylesheet" href="css/indexphp.css">
 
 	<!--CLIMA y reloj-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/jquery.simpleWeather.js"></script>
     <script type="text/javascript" src="js/reloj.js"></script>
+    <script src="js/codiguito.js"></script>
 </head>
 <body onload="actualizaReloj();">
 	<section id="wrapper">
@@ -42,9 +43,41 @@
 					<img src="img/vin.jpg">
 					<h2>Ultimas Noticias</h2>
 				</div>
-				
-				
-
+				<div id="contenedor-art">
+				<article class="articulo">
+					<div class="imagen-art">
+						<img src="img/abstract2.jpg" alt=""> 
+					</div>
+					<div class="tit-art">
+						<h2>Boletin #1</h2>
+					</div>
+					<div class="parrafo-art">
+						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+					</div>
+					
+				</article>
+				<div class="btn-articulo">
+						<a href="#">Aqui</a>
+					</div>
+				</div><!--Fin contenedor art-->
+				<div id="contenedor-art">
+				<article class="articulo">
+					<div class="imagen-art">
+						<img src="img/abstract2.jpg" alt=""> 
+					</div>
+					<div class="tit-art">
+						<h2>Boletin #1</h2>
+					</div>
+					<div class="parrafo-art">
+						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+					</div>
+					
+				</article>
+				<div class="btn-articulo">
+						<a href="#">Aqui</a>
+					</div>
+				</div><!--Fin contenedor art-->
+				<div id="contenedor-art">
 				<article class="articulo">
 					<div class="imagen-art">
 						<img src="img/abstract2.jpg" alt=""> 
@@ -56,28 +89,10 @@
 						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
 					</div>
 				</article>
-				<article class="articulo">
-					<div class="imagen-art">
-						<img src="img/abstract2.jpg" alt=""> 
+				<div class="btn-articulo" id="perzonalizar">
+						<a href="#">Aqui</a>
 					</div>
-					<div class="tit-art">
-						<h2>Boletin #1</h2>
-					</div>
-					<div class="parrafo-art">
-						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-					</div>
-				</article>
-				<article class="articulo">
-					<div class="imagen-art">
-						<img src="img/abstract2.jpg" alt=""> 
-					</div>
-					<div class="tit-art">
-						<h2>Boletin #1</h2>
-					</div>
-					<div class="parrafo-art">
-						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-					</div>
-				</article>
+			</div>
 
 			</section>
 			<aside id="bderecha">
@@ -86,6 +101,9 @@
 			<!--<section id="carrusel">
 				carrusel
 			</section>-->
+			<div id="footerline1">
+				<img src="img/footerline.png" alt="">
+			</div>
 		</section>
 		
 		<footer>
@@ -145,8 +163,16 @@
 					<li><a href="">Otros Sitios</a></li>
 				</ul>
 			</div>
-			
+		<div id="footerline1">
+				<img src="img/footerline2.png" alt="">
+		</div>	
+		<div id="pie-pagina">
+			<h5>Circulo del Reloj Publico, Ote. #1, Col. Centro.</h5>
+			<h5>Cd. Delicias, Chihuahua.</h5>
+			<h5>Tel. (639)4708600</h5>
+		</div>
 		</footer>
+		
 		
 	</section>
 </body>
