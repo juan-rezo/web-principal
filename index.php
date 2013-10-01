@@ -102,7 +102,7 @@
 				carrusel
 			</section>-->
 			<div id="footerline1">
-				<img src="img/footerline.png" alt="">
+				<img src="img/footerlinenuevo.png" alt="">
 			</div>
 		</section>
 		
@@ -164,7 +164,7 @@
 				</ul>
 			</div>
 		<div id="footerline1">
-				<img src="img/footerline2.png" alt="">
+				<img src="img/footerlinenuevo2.png" alt="">
 		</div>	
 		<div id="pie-pagina">
 			<h5>Circulo del Reloj Publico, Ote. #1, Col. Centro.</h5>
@@ -238,11 +238,11 @@
 
         		
         		/*html = '<img  src="clima/icons/'+weather.code+'.png" class="icono-clima">';*/
-        		html = '<img style="float:left;" width="64px" src="'+weather.image+'">';
+        		html = '<img style="float:left;" width="55px" src="'+weather.image+'">';
         		/*html += '<span class="ciudad">'+weather.city+'</span>';*/
         		/*html += '<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>';*/
 
-        		html += '<p class="clima">'+weather.temp+'&deg; '+weather.units.temp+'<span class="clima">'+condiciones[weather.code]+' | <div id="Fecha_Reloj"></div> </span></p>';
+        		html += '<p class="clima">'+weather.temp+'&deg; '+weather.units.temp+'<span class="clima">'+condiciones[weather.code]+'  | <div id="Fecha_Reloj"></div>';
 
 
 

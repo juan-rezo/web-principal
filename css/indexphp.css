@@ -3,6 +3,7 @@ body{
 	font-size: 1em;
 	font-family: arial;
 }
+
 #bizquierda,aside{
 	/*background-color: black;*/
 	display: inline-block;
@@ -23,7 +24,18 @@ aside{
 	/*width: 30%;*/
 	width: 22%;
 	/*margin: 0 0.5em;*/
+
 	
+}
+footer{
+	outline: orange 1px solid;
+}
+header{
+
+	border-top: 1px solid #1D77C2;
+}
+header h1{
+	font-size:.5em;
 }
 header,footer,#contenido{
 	margin: 0 auto;
@@ -79,14 +91,14 @@ nav a:hover{
 }
 
 #clima{
-	border-bottom: 3px solid #1D76C0;
+	/*border-bottom: 3px solid #1D76C0;*/
 	background-color: white;
 	width: 90%;
 	margin: 0 auto;
 }
 #contenedor-art{
 	width: 32%;
-	/*outline: solid red 1px;*/
+	outline: solid red 1px;
 	display:inline-block;
 }
 div#Fecha_Reloj{
@@ -196,6 +208,7 @@ div#Fecha_Reloj{
 .imagen-art img{
 	/*width: 100%;*/
 	padding-top: 1em;
+
 }
 .linkizq, .linkder{
 	width: 18%;
@@ -205,6 +218,8 @@ div#Fecha_Reloj{
 	font-family: arial;
 	text-align: left;
 	color:black;
+	outline:solid 1px black;
+	vertical-align: top;
 }
 .linkizq h2, .linkder h2{
 	/*outline: solid 1px blue;*/
@@ -226,13 +241,16 @@ div#Fecha_Reloj{
 }
 
 .img-pie{
+	vertical-align: bottom;
 	display: inline-block;
 	width: 55%;
+	outline: red 1px solid;
 }
 .linkder{
-	width: 25%;
+	width: 24%;
 }
 .tit-contenedores{
+	outline: solid 1px green;
 	color:#001D3A;
 }
 .tit-contenedores img, .tit-contenedores h2{
