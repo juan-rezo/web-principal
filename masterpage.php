@@ -3,20 +3,12 @@
     /*require_once "class/principal.php"*/
     
     $objT = new Paginas();
-    $idlugar=4;
-    $idseccion=3;
     
-    $datos = $objT->getContenidoTemplate($idlugar,$idseccion);
-    
-   /* $objP = new Paginas();
+    $idlugar=$_GET['id'];//idfuebte|idescudo|iderelog
+    /*$idlugar=1;*/
+    $datos = $objT->getContenidoTemplate($idlugar);
     
     
-    $idlugar = 4;
-    $idseccion = 1;
-    
-    $datos = $objP->getPaginas($idlugar,$idseccion);
-
-    echo $query;*/
 ?>
 
 <!doctype html>
@@ -58,15 +50,18 @@
         <section id="contenido">
             <div id="seccion">
                 <div class="titulo">
-                    <h2>TITULO DE PRUEBA</h2>
+                    <h2><?php echo $datos[0]["nombre"]?></h2>
                     <div class="imagen">
-                        <img src="" alt="">
+                        
+                        <img src="<?php echo $datos[0]['rutaImagen'];?>" alt="">
+                    </div>    
                         <div class="texto">
-                            <p>tetxto pureba bla bla bla bla baamn aasjhjxhjsaujdfjh</p>
+                            
+                            <?php echo $datos[0]["texto"];?>
                         </div>
                     </div>
                 </div>
-            </div>
+        
             
             
             <div id="footerline1">
@@ -88,10 +83,10 @@
                 
                 <h2>La Ciudad</h2>
                 <ul>
-                    <li><a href="">El Escudo</a></li>
-                    <li><a href="">Circulo del Reloj</a></li>
-                    <li><a href="">Las Pizcadoras</a></li>
-                    <li><a href="">Fuente de los Fundadores</a></li>
+                    <li><a href="masterpage.php?id=4">El Escudo</a></li>
+                    <li><a href="masterpage.php?id=2">Circulo del Reloj</a></li>
+                    <li><a href="masterpage.php?id=3">Las Pizcadoras</a></li>
+                    <li><a href="masterpage.php?id=1">Fuente de los Fundadores</a></li>
                 </ul>
                 
                 <h2>Región</h2>

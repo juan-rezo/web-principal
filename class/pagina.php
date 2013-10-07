@@ -10,27 +10,49 @@ class Paginas extends Principal{
         $this->template = array();
     }
     /******************************/
-    public function getContenidoTemplate($idlugar,$idseccion)
+    public function getContenidoTemplate($idseccion)
     {
         parent::conectar();
         $query = sprintf("SELECT 
-                            detalle 
-                            FROM
-                            lugarseccion 
-                            WHERE 
-                            idlugar = %s and idseccion = %s;",
-                            parent::comillas_inteligentes($idlugar),
+                            nombre,
+                            rutaImagen,
+                            texto
+                          FROM
+                            seccion 
+                          WHERE 
+                            idseccion = %s ",
                             parent::comillas_inteligentes($idseccion)
+                            
                         );
-                        //echo $query;
+                        //echo $query; exit;
         $result = mysql_query($query);
 
-        while ($reg = mysql_fetch_array($result)){
-            $this->template = $reg["detalle"];
+        while ($reg = mysql_fetch_assoc($result)){
+            $this->template[] = $reg;
         }
-        
+        return $this->template;
         
     }
+/******************************************************************************/
+/*****************LLenar Agenda************************************************/
+    public function getContenidoAgenda($inicio,$CantEvent){
+        parent::conectar();
+        $query = sprintf("SELECT 
+                           hora,
+                           lugar,
+                           detalle
+                          FROM
+                            agenda
+                          order by idagenda asc
+		                  limit %s, %s ",
+						      parent::comillas_inteligentes($inicio),
+                              parent::comillas_inteligentes($CantEvent)
+                              );
+                              echo $query; exit;
+        
+    }
+    
+    //
     
 }//fin clase
 

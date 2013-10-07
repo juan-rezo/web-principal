@@ -1,5 +1,6 @@
 <?php
-require_once "principal.php";
+require_once "class/principal.php";
+
 
 class Noticias extends Principal{
 	//Atributos

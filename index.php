@@ -1,3 +1,12 @@
+<?php 
+   require_once "class/Pagina.php";
+    
+    $inicio=0;
+    $CantEvent=5;
+    $objAg =new Paginas();
+    $datAgenda = $objAg->getContenidoAgenda($inicio,$CantEvent); 
+       
+?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -96,7 +105,11 @@
 
 			</section>
 			<aside id="bderecha">
-				<h2>Agenda del Alcalde</h2>
+				<div id="agenda">
+					<span class="evento"><?php echo "evento"; ?></span>
+					<span class="hora"><?php "hora";?></span>
+					<span class="lugar"><?php echo"lugar";?></span>
+				</div>
 			</aside>
 			<!--<section id="carrusel">
 				carrusel
@@ -120,10 +133,10 @@
 				
 				<h2>La Ciudad</h2>
 				<ul>
-					<li><a href="">El Escudo</a></li>
-					<li><a href="">Circulo del Reloj</a></li>
-					<li><a href="">Las Pizcadoras</a></li>
-					<li><a href="">Fuente de los Fundadores</a></li>
+					<li><a href="masterpage.php?id=4">El Escudo</a></li>
+                    <li><a href="masterpage.php?id=2">Circulo del Reloj</a></li>
+                    <li><a href="masterpage.php?id=3">Las Pizcadoras</a></li>
+                    <li><a href="masterpage.php?id=1">Fuente de los Fundadores</a></li>
 				</ul>
 				
 				<h2>Región</h2>
