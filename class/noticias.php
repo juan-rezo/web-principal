@@ -88,6 +88,36 @@ class Noticias extends Principal{
 
 
 	}//fin NociaPorId
+    
+    /********************************************************************************************************************/
+    /*********************************GET ULTIMAS NOTIXIAS****************************************************************/
+    public function getUltimasNoticias($UNinicio,$UNcantNot){
+		parent::conectar();
+
+		$query = sprintf(
+						"select
+						  titulo,
+						  detalle
+						from
+						  noticia
+						order by idnoticia DESC
+						limit %s,%s;",
+						parent::comillas_inteligentes($UNinicio),
+						parent::comillas_inteligentes($UNcantNot)
+					);
+		//echo $query;exit;//intruccion para verificar el query
+		$result = mysql_query($query)
+            or die("Error en la consulta SQL");
+			
+			if(!$result)
+				die("Regrese más tarde");
+
+			while ($reg = mysql_fetch_assoc($result)) {
+				$this->noticia[] = $reg;
+			}
+
+			return $this->noticia;
+	} //Fin noticias
 
 }//Fin clase
 

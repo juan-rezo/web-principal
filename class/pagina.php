@@ -39,6 +39,7 @@ class Paginas extends Principal{
         parent::conectar();
         $query = sprintf("SELECT 
                            hora,
+                           fecha,
                            lugar,
                            detalle
                           FROM
@@ -48,7 +49,15 @@ class Paginas extends Principal{
 						      parent::comillas_inteligentes($inicio),
                               parent::comillas_inteligentes($CantEvent)
                               );
-                              echo $query; exit;
+            $result = mysql_query($query);
+            
+            if (!$result)
+                die ("sindatos en la bd");
+            
+            while($reg = mysql_fetch_assoc($result)){
+                $this->template[] = $reg;
+            }
+            return $this->template;
         
     }
     

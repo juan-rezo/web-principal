@@ -1,11 +1,16 @@
 <?php 
    require_once "class/Pagina.php";
+   require_once "class/noticias.php";
     
     $inicio=0;
     $CantEvent=5;
     $objAg =new Paginas();
     $datAgenda = $objAg->getContenidoAgenda($inicio,$CantEvent); 
-       
+    
+    $UNinicio=0;
+    $UNcantNot=3;
+    $objUN= new Noticias();
+    $datUN = $objUN->getUltimasNoticias($UNinicio,$UNcantNot);  
 ?>
 <!doctype html>
 <html lang="es">
@@ -52,64 +57,51 @@
 					<img src="img/vin.jpg">
 					<h2>Ultimas Noticias</h2>
 				</div>
-				<div id="contenedor-art">
+  <!--********************************************************************-->              
+				<?php 
+                foreach($datUN as $dUN)
+                {
+                ?>
+                <div id="contenedor-art">
 				<article class="articulo">
 					<div class="imagen-art">
 						<img src="img/abstract2.jpg" alt=""> 
 					</div>
 					<div class="tit-art">
-						<h2>Boletin #1</h2>
+						<h2><?php echo $dUN["titulo"]; ?></h2>
 					</div>
 					<div class="parrafo-art">
-						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+						<?php echo Principal::myTruncate ($dUN["detalle"],200);?>
 					</div>
 					
 				</article>
 				<div class="btn-articulo">
-						<a href="#">Aqui</a>
+						<a href="#">Ver Nota Completa</a><img>
 					</div>
 				</div><!--Fin contenedor art-->
-				<div id="contenedor-art">
-				<article class="articulo">
-					<div class="imagen-art">
-						<img src="img/abstract2.jpg" alt=""> 
-					</div>
-					<div class="tit-art">
-						<h2>Boletin #1</h2>
-					</div>
-					<div class="parrafo-art">
-						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-					</div>
-					
-				</article>
-				<div class="btn-articulo">
-						<a href="#">Aqui</a>
-					</div>
-				</div><!--Fin contenedor art-->
-				<div id="contenedor-art">
-				<article class="articulo">
-					<div class="imagen-art">
-						<img src="img/abstract2.jpg" alt=""> 
-					</div>
-					<div class="tit-art">
-						<h2>Boletin #1</h2>
-					</div>
-					<div class="parrafo-art">
-						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-					</div>
-				</article>
-				<div class="btn-articulo" id="perzonalizar">
-						<a href="#">Aqui</a>
-					</div>
-			</div>
-
+                <?php 
+                }
+                ?>
+    <!--******************************************************************-->            
+				
 			</section>
 			<aside id="bderecha">
-				<div id="agenda">
-					<span class="evento"><?php echo "evento"; ?></span>
-					<span class="hora"><?php "hora";?></span>
-					<span class="lugar"><?php echo"lugar";?></span>
+				<div class="tit-contenedores">
+					<img src="img/vin.jpg">
+					<h2>Agenda</h2>
 				</div>
+            <?php
+				foreach($datAgenda as $datA){
+			?>
+				<div id="agenda">
+                    
+					<span id="evento" class="evento"><?php echo $datA["detalle"]?></span>
+					<span class="lugar"><?php echo $datA["lugar"];?></span>
+					<span class="hora"><?php echo $datA["hora"];?></span>
+				</div>
+            <?php 
+                }
+            ?>
 			</aside>
 			<!--<section id="carrusel">
 				carrusel
@@ -142,10 +134,10 @@
 				<h2>Región</h2>
 				<ul>
 					
-					<li><a href="">Municipio de Delicias</a></li>
-					<li><a href="">Municipio de Meoqui</a></li>
-					<li><a href="">Municipio de Saucillo</a></li>
-					<li><a href="">Municipio de Julimes</a></li>
+					<li><a href="http://www.delicias.gob.mx">Municipio de Delicias</a></li>
+					<li><a href="http://www.meoqui.gob.mx/">Municipio de Meoqui</a></li>
+					<li><a href="http://www.mpiosaucillo.gob.mx/">Municipio de Saucillo</a></li>
+					<li><a href="http://www.julimes.gob.mx/">Municipio de Julimes</a></li>
 				</ul>
 			</div>
 			<div class="img-pie">
@@ -155,8 +147,8 @@
 				<ul>
 					<h2>Enlaces de Interes</h2>
 					<li><a href="">Plan Municipal de Desarrollo</a></li>
-					<li><a href="">Presidencia de la República</a></li>
-					<li><a href="">Gobienrno del Estado de Chihuahua</a></li>
+					<li><a href="http://www.presidencia.gob.mx/">Presidencia de la República</a></li>
+					<li><a href="http://www.chihuahua.gob.mx/">Gobienrno del Estado de Chihuahua</a></li>
 					<li><a href="">Otros Sitios</a></li>
 				</ul>
 
@@ -178,7 +170,8 @@
 			</div>
 		<div id="footerline1">
 				<img src="img/footerlinenuevo2.png" alt="">
-		</div>	
+		</div>
+		<div id="pie-pagina-holder"></div>	
 		<div id="pie-pagina">
 			<h5>Circulo del Reloj Publico, Ote. #1, Col. Centro.</h5>
 			<h5>Cd. Delicias, Chihuahua.</h5>
